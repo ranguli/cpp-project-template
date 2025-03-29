@@ -1,10 +1,6 @@
-# cpp-qt-template
+# cpp-project-template
 
-Modern project C++20 project template that uses CMake, Qt 6, QML, and vcpkg.
-
-## About
-
-The project template is developed with the premise that the UI will be written entirely in QML to promote sepration of concerns. The UI should be split into distinct QML modules to encourage scalability and re-usability.
+Modern project C++20 project template that uses CMake, Google Test, and vcpkg.
 
 ### Why use this?
 
@@ -18,18 +14,12 @@ There are a number of pros to vcpkg:
     - We don't need to use git submodules, CMake FetchContent, copy code into our repo, use a system package manager (usually), etc.
 - We get slightly more reproducible builds, which is great.
 
-It isn't without downsides:
-
-- I genuinely can't get Qt to work via `vcpkg` yet (at least on Linux) - even via a dependency manager building something like Qt from source is _not_ for the faint of heart apparently.
-- **So vcpkg is really here for any non-Qt dependencies**
-
 ## Requirements
 
 - CMake ≥ 3.21
 - Ninja (at least by default, other build presets can be configured)
 - C++20
 - [vcpkg](https://github.com/microsoft/vcpkg)
-- Qt (sourced by you, through your OS package manager or some other means)
 
 ## Usage
 
